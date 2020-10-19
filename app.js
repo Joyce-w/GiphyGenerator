@@ -36,7 +36,7 @@ async function searchGif(searchVal) {
 // Allow the user to search for as many GIFs as they would like and keep appending them to the page
 
  function populateGifs(results) {
-     $('.populatedGifs').append(`<img src=${results}/>`)
+     $('.populatedGifs').prepend(`<img src=${results}/>`)
      $('#searchForm')[0].reset()
 }
 
